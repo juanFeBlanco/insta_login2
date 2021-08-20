@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="115dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/instagram" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="347dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/fill_shape"
+            android:ems="10"
+            android:hint="    Username"
+            android:inputType="textPersonName"
+            android:paddingTop="7"
+            android:paddingBottom="5"
+            android:textColor="#FCD5FF"
+            android:textColorHint="#BC92C1"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="347dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fill_shape"
+            android:ems="10"
+            android:hint="    Password"
+            android:inputType="textPersonName"
+            android:paddingTop="7"
+            android:paddingBottom="5"
+            android:textColor="#FCD5FF"
+            android:textColorHint="#C48BC8"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Forgot your login details? Get help singing in"
+            android:textColor="#FDE1FF"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="341dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_1"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Login"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            app:strokeColor="#D984E8"
+            app:strokeWidth="3dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="180dp"
+            android:text="Log in with Facebook"
+            android:textColor="#FDE1FF"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="103dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="415dp"
+        android:layout_height="54dp"
+        android:text="Don't have an account? Sign Up."
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
